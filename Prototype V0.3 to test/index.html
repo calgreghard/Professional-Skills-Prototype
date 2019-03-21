@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bronze Age Trading</title>
+    <style>
+        body{
+            font-size: 2em;
+        }
+        canvas{
+            position: center;
+            width: 100%;
+            height: 100%;
+            min-width: 320px;
+            max-width: 1200px;
+            min-height: 568px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- religious images -->
+    <img id="sunDisk" src="assets/sun_disk.png" hidden="hidden" />
+
+    <!-- building images -->
+    <img id="bentStone" src="assets/stones_2.png" hidden="hidden" />
+    <img id="squareStone" src="assets/stones_3.png" hidden="hidden" />
+    <img id="roughStone" src="assets/stones_4.png" hidden="hidden" />
+    <img id="tentImage" src="assets/decor_2.png" hidden="hidden" />
+    <img id="pyramidImage" src="assets/decor_1.png" hidden="hidden" />
+    <img id="villageImage" src="assets/building_3.png" hidden="hidden" />
+    <img id="townImage" src="assets/building_2.png" hidden="hidden" />
+    <img id="cityImage" src="assets/building_1.png" hidden="hidden" />
+    <img id="bg" src="assets/bg.png" hidden="hidden" />
+    <img id="caravan" src="assets/caravan.png" hidden="hidden" />
+
+    <!-- canvas -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Buttons -->
+    <br />
+    <button onclick="addCity()">Add another city</button>
+    <button onclick="startTradeRoute()">Start a trade route</button>
+
+    <!-- scripts -->
+    <script src="js/classes/dictionary.js"></script>
+    <script src="js/classes/point.js"></script>
+    <script src="js/classes/simplePolygon.js"></script>
+    <script src="js/classes/tab.js"></script>
+    <script src="js/classes/menu.js"></script>
+    <script src="js/classes/tradeGoods.js"></script>
+    <script src="js/classes/tradeVessel.js"></script>
+    <script src="js/classes/deity.js"></script>
+    <script src="js/classes/religion.js"></script>
+    <script src="js/classes/building.js"></script>
+    <script src="js/classes/city.js"></script>
+    <script src="js/images.js"></script>
+    <script src="js/goods.js"></script>
+    <script src="js/godsAndReligion.js"></script>
+    <script src="js/enums.js"></script>
+    <script src="js/globalVariables.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
